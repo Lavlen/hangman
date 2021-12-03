@@ -55,7 +55,7 @@ def start_playing(word):
         print(attempts, 'tries left, letters used ', ' '.join(guessed_letters))
 
         # receive user input and convert to uppercase
-        guess = input('please guess a letter: ').upper()
+        guess = input('please guess a letter: \n').upper()
         """
         check if one letter has been inputted
         and if it has been tried before
@@ -197,7 +197,7 @@ def body_parts(attempts):
 def hangman():
     word = get_word()
     start_playing(word)
-    while input("Try again? (Y/N) ").upper() == "Y":
+    while input("Try again? (Y/N) \n").upper() == "Y":
         word = get_word()
         start_playing(word)
 
