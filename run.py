@@ -28,7 +28,7 @@ def get_word():
     word = random.choice(word_list)
     return word.upper()  # make word uppercase
 
-def start_playing():
+def start_playing(word):
     """
     display random word as string of underscore
     create variables for storing lists of
@@ -108,7 +108,7 @@ def start_playing():
         print('you ran out of attempts. The word is: ', word)
 
 
-def body_parts(attemps):
+def body_parts(attempts):
     stages = [ 
                """
                   ______
@@ -192,10 +192,16 @@ def body_parts(attemps):
                 """
              ]
     return stages[attempts]
+
+
+def hangman():
+    word = get_word()
+    start_playing(word)
+    while input("Try again? (Y/N) ").upper() == "Y":
+        word = get_word()
+        start_playing(word)
+
+
+if __name__ == "__main__":
+    hangman()
         
-
-
-
-
-
-
