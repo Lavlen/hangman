@@ -9,7 +9,7 @@ import sys
 # clear screen
 def screen_clear():
     os.system('cls')
-    
+
 
 #  Print a diagram of hangman
 print('===================== HANGMAN ===============')
@@ -25,21 +25,29 @@ print('Thinking of a word')
 
 # Time delay function
 def delay():
-    for i in range(3):
+    """
+    time delay function
+    delay game start by 5 seconds
+    """
+    for i in range(5):
         print('.', end="")
-        sleep(.3)  # wait 3 seconds
+        sleep(.5)
     print()
 delay()
 
 
 def get_word():
-    # randomly chooses a word from the list
+    """
+    randomly choose a word from the word_list
+    imported from file words
+    """
     word = random.choice(word_list)
-    return word.upper()  # make word uppercase
+    return word.upper()  
 
+ 
 def start_playing(word):
     """
-    display random word as string of underscore
+    run game,display random word as string of underscore
     create variables for storing lists of
     guessed letters, words and number of valid guesses
     """
