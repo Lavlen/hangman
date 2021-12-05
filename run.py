@@ -131,7 +131,6 @@ def start_playing(word):
         print('Well done, you guessed the word!', word)
     else:
         print('you ran out of attempts. The word is: ', word)
-        userInput = input("Enter 'R' to restart or 'X' to exit: ")
 
 
 def body_parts(attempts):
@@ -144,11 +143,16 @@ def body_parts(attempts):
 def hangman():
     word = get_word()
     start_playing(word)
-    while input("Try again? (Y/N) \n").upper() == "Y":
+    while input("Enter 'R' to restart or 'X' to exit: ").upper() == 'R':
         word = get_word()
         start_playing(word)
+    if input == 'X':
+        sys.exit("Values do not match")
+    else:
+        print("Invalid selection")
 
-
+       
+# execute main 
 if __name__ == "__main__":
     hangman()
-        
+    
