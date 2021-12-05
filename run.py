@@ -1,16 +1,25 @@
 import random
 from words import word_list
 from time import sleep
+from hangman_parts import stages 
+import os
+import sys
+
+
+# clear screen
+def screen_clear():
+    os.system('cls')
+    
 
 #  Print a diagram of hangman
-print('============ HANGMAN ========')
-print('   ',  '______')
-print('   ',  '|    |')
-print('   ',  '|    O')
-print('   ',  '|   /|\\')
-print('   ',  '|   / \\')
+print('===================== HANGMAN ===============')
+print('')
+print('  1. Enter a letter or whole word')
+print('  2. You are allowed 6 attempts')
+print('  3. Letters already tried will not count against player')
+print('  4. Select "X" or "R" to exit or restart the game')
 print()
-print('=============================')
+print('=============================================')
 
 print('Thinking of a word')
 
@@ -55,7 +64,7 @@ def start_playing(word):
         print(attempts, 'tries left, letters used ', ' '.join(guessed_letters))
 
         # receive user input and convert to uppercase
-        guess = input('please guess a letter: \n').upper()
+        guess = input('please guess a letter: ').upper()
         """
         check if one letter has been inputted
         and if it has been tried before
@@ -109,88 +118,7 @@ def start_playing(word):
 
 
 def body_parts(attempts):
-    stages = [ 
-               """
-                  ______
-                   |    |
-                   |    O
-                   |   /|\\
-                   |    |
-                   |   / \\
-                   |
-                   ^^^^^^^^^^^^^^
-                """,
-                """
-                   ______
-                   |    |
-                   |    O
-                   |   /|\\
-                   |    |
-                   |     \\
-                   |
-                   ^^^^^^^^^^^^^^
-                """,
-                """
-                   ______
-                   |    |
-                   |    O
-                   |   /|\\
-                   |    |
-                   |
-                   |
-                   ^^^^^^^^^^^^^^
-                """,
-                """
-                   ______
-                   |    |
-                   |    O
-                   |   /|\\
-                   |    
-                   |   
-                   |
-                   ^^^^^^^^^^^^^^
-                """,
-                """
-                   ______
-                   |    |
-                   |    O
-                   |   /|\\
-                   |    
-                   |   
-                   |
-                   ^^^^^^^^^^^^^^
-                """,
-                """
-                   ______
-                   |    |
-                   |    O
-                   |    |\\
-                   |    
-                   | 
-                   |
-                   ^^^^^^^^^^^^^^
-                """,
-                """
-                   ______
-                   |    |
-                   |    O
-                   |   
-                   |    
-                   |   
-                   |
-                   ^^^^^^^^^^^^^^
-                """,
-                """
-                   ______
-                   |    |
-                   |    
-                   |   
-                   |   
-                   |   
-                   |
-                   ^^^^^^^^^^^^^^
-                """
-             ]
+   
     return stages[attempts]
 
 
