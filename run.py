@@ -76,7 +76,7 @@ def start_playing(word):
         and if it has been tried before
         otherwise if the letter is not in the word say so
         """
-        if len(guess) == 1 and user_input in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+        if len(user_input) == 1 and user_input in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
             if user_input in guessed_letters:
                 print(' Letter already tried', user_input)
             elif user_input not in word:
@@ -126,7 +126,7 @@ def start_playing(word):
         print('==================================')
         print('')
         print(secret_word)
-        print()
+        print('')
     if guessed:
         print('Well done, you guessed the word!', word)
     else:
