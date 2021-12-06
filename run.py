@@ -158,7 +158,7 @@ if __name__ == "__main__":
         try:
             # input options to start or exit games
             selection = int(input('    Select an option: '))
-        except InputError:
+        except ValueError:
             # handle input option errors
             screen_clear()
             print('    Select one of the given options')
