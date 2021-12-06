@@ -8,20 +8,17 @@ import sys
 
 # clear screen
 def screen_clear():
-    os.system('cls')
+    lambda: os.system('cls')
 
 
 #  Print a diagram of hangman
 print('   ===================== HANGMAN ===============')
-print('')
 print('   1. Enter a letter or whole word')
 print('   2. You are allowed 6 attempts')
 print('   3. Letters already tried will not count against player')
 print('   4. Select "X" or "R" to exit or restart the game')
-print()
 print('   =============================================')
-
-print('    Thinking of a word')
+print('    Thinking of a word\n')
 
 # Time delay function
 def delay():
@@ -122,7 +119,7 @@ def start_playing(word):
                 print("    =============================================")
 
         else:
-            print('  ', user_input,'is not a valid input')
+            print('    ', user_input,'is not a valid input')
         print(body_parts(attempts))
         print('    ==================================')
         print('')
@@ -144,16 +141,47 @@ def body_parts(attempts):
 def hangman():
     word = get_word()
     start_playing(word)
-    while input("    Enter 'R' to restart or 'X' to exit: ").upper() == 'R':
-        word = get_word()
-        start_playing(word)
-    if input == 'X':
-        sys.exit("   Values do not match")
-    else:
-        print("   Invalid selection")
 
-       
 # execute main 
 if __name__ == "__main__":
     hangman()
-    
+
+# Exit or restart options
+    options = {1: "Restart game", 2: "Exit game"}
+
+    # end of game loop
+    while True:
+        #print options
+        for option in options:
+            print('    Choose', option, 'to', options[option])
+        print()
+
+        # manage player choices and exceptions
+        try:
+            # input options to start or exit games
+            selection = int(input('    Select an option: '))
+        except InputError:
+            # handle input option errors
+            screen_clear()
+            print('    Select one of the given options')
+            continue
+
+        # check if choice is in option
+        if selection not in options:
+            screen_clear()
+            print('    Select one of the given options')
+            continue
+
+        # execute methods 
+        selected = options[selection]
+
+        if selected == "Exit game":
+            print('    Thanks for playing!')
+            exit()
+            
+        if selected == "Restart game":
+            screen_clear()
+            delay()
+            hangman()
+
+ 
