@@ -1,7 +1,7 @@
 import random
 from words import word_list
 from time import sleep
-from hangman_parts import stages 
+from hangman_parts import stages
 import os
 import sys
 
@@ -19,6 +19,7 @@ print('   3. Letters already tried will not count against player')
 print('   4. Select "X" or "R" to exit or restart the game')
 print('   =============================================')
 print('    Thinking of a word\n')
+
 
 # Time delay function
 def delay():
@@ -40,9 +41,9 @@ def get_word():
     imported from file words
     """
     word = random.choice(word_list)
-    return word.upper()  
+    return word.upper()
 
- 
+
 def start_playing(word):
     """
     run game,display random word as string of underscore
@@ -55,17 +56,14 @@ def start_playing(word):
     guessed_letters = []
     guessed_words = []
     attempts = 6
-    print()
-    print(body_parts(attempts)) # print hangman stages
+    print(body_parts(attempts))  # print hangman stages
     print('   ', secret_word)  # print random placeholders
-    print('')
-    
 
     # Check if word has been guessed and attempts are more than zero
     while not guessed and attempts > 0:
 
         # join guessed letters to existing string
-        print('   ', attempts, 'tries left, letters used ', ' '.join(guessed_letters))
+        print('   ', attempts, 'Chances, tried: ', ' '.join(guessed_letters))
 
         # receive user input and convert to uppercase
         user_input = input('    Please guess a letter or a word: ').upper()
@@ -119,7 +117,7 @@ def start_playing(word):
                 print("    =============================================")
 
         else:
-            print('    ', user_input,'is not a valid input')
+            print('    ', user_input, 'is not a valid input')
         print(body_parts(attempts))
         print('    ==================================')
         print('')
@@ -142,7 +140,7 @@ def hangman():
     word = get_word()
     start_playing(word)
 
-# execute main 
+# execute main
 if __name__ == "__main__":
     hangman()
 
@@ -151,7 +149,7 @@ if __name__ == "__main__":
 
     # end of game loop
     while True:
-        #print options
+        #  print options
         for option in options:
             print('    Choose', option, 'to', options[option])
         print()
@@ -172,16 +170,14 @@ if __name__ == "__main__":
             print('    Select one of the given options')
             continue
 
-        # execute methods 
+        # execute methods
         selected = options[selection]
 
         if selected == "Exit game":
             print('    Thanks for playing!')
             exit()
-            
+
         if selected == "Restart game":
             screen_clear()
             delay()
             hangman()
-
- 
