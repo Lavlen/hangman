@@ -12,16 +12,16 @@ def screen_clear():
 
 
 #  Print a diagram of hangman
-print('===================== HANGMAN ===============')
+print('   ===================== HANGMAN ===============')
 print('')
-print('  1. Enter a letter or whole word')
-print('  2. You are allowed 6 attempts')
-print('  3. Letters already tried will not count against player')
-print('  4. Select "X" or "R" to exit or restart the game')
+print('   1. Enter a letter or whole word')
+print('   2. You are allowed 6 attempts')
+print('   3. Letters already tried will not count against player')
+print('   4. Select "X" or "R" to exit or restart the game')
 print()
-print('=============================================')
+print('   =============================================')
 
-print('Thinking of a word')
+print('    Thinking of a word')
 
 # Time delay function
 def delay():
@@ -29,8 +29,9 @@ def delay():
     time delay function
     delay game start by 5 seconds
     """
+    print('', end='    ')
     for i in range(5):
-        print('.', end="")
+        print('.', end='')
         sleep(.5)
     print()
 delay()
@@ -52,14 +53,14 @@ def start_playing(word):
     guessed letters, words and number of valid guesses
     """
     secret_word = "-" * len(word)
-    print("The word has", len(secret_word), "letters")
+    print("    The word has", len(secret_word), "letters")
     guessed = False
     guessed_letters = []
     guessed_words = []
     attempts = 6
     print()
     print(body_parts(attempts)) # print hangman stages
-    print(secret_word)  # print random placeholders
+    print('   ', secret_word)  # print random placeholders
     print('')
     
 
@@ -67,10 +68,10 @@ def start_playing(word):
     while not guessed and attempts > 0:
 
         # join guessed letters to existing string
-        print(attempts, 'tries left, letters used ', ' '.join(guessed_letters))
+        print('   ', attempts, 'tries left, letters used ', ' '.join(guessed_letters))
 
         # receive user input and convert to uppercase
-        user_input = input('please guess a letter or a word: ').upper()
+        user_input = input('    Please guess a letter or a word: ').upper()
         """
         check if one letter has been inputted
         and if it has been tried before
@@ -78,18 +79,18 @@ def start_playing(word):
         """
         if len(user_input) == 1 and user_input in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
             if user_input in guessed_letters:
-                print(' Letter already tried', user_input)
+                print('   Letter already tried', user_input)
             elif user_input not in word:
-                print(user_input, 'is not in the word')
+                print('   ', user_input, 'is not in the word')
                 """
                 decrement from remaining attempts
                 add guessed letters to guessed_letters list
                 """
                 attempts -= 1
                 guessed_letters.append(user_input)
-                print('incorrect letters already tried: ', user_input)
+                print('    Incorrect letters already tried: ', user_input)
             else:
-                print('This letter,', user_input, 'is in the word!')
+                print(' ', user_input, 'is in the word!')
                 guessed_letters.append(user_input)
                 """
                 Convert from string to list for
@@ -110,27 +111,27 @@ def start_playing(word):
                     guessed = True
         elif len(user_input) == len(word) and user_input.isalpha():
             if user_input in guessed_words:
-                print(user_input, 'you already tried that word')
+                print('   ', user_input, 'already tried that word')
             elif user_input != word:
-                print(user_input, 'is not the word')
+                print('   ', user_input, 'is not the word')
                 attempts -= 1
                 guessed_words.append(user_input)
             else:
                 guessed = True
                 secret_word = word
-                print("=============================================")
+                print("    =============================================")
 
         else:
-            print(user_input, 'is not a valid input')
+            print('  ', user_input,'is not a valid input')
         print(body_parts(attempts))
-        print('==================================')
+        print('    ==================================')
         print('')
-        print(secret_word)
+        print('   ', secret_word)
         print('')
     if guessed:
-        print('Well done, you guessed the word!', word)
+        print('    Well done, you guessed the word!', word)
     else:
-        print('you ran out of attempts. The word is: ', word)
+        print('    You ran out of attempts. The word is: ', word)
 
 
 def body_parts(attempts):
@@ -143,13 +144,13 @@ def body_parts(attempts):
 def hangman():
     word = get_word()
     start_playing(word)
-    while input("Enter 'R' to restart or 'X' to exit: ").upper() == 'R':
+    while input("    Enter 'R' to restart or 'X' to exit: ").upper() == 'R':
         word = get_word()
         start_playing(word)
     if input == 'X':
-        sys.exit("Values do not match")
+        sys.exit("   Values do not match")
     else:
-        print("Invalid selection")
+        print("   Invalid selection")
 
        
 # execute main 
