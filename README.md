@@ -130,5 +130,23 @@ The pep8 online checker identified a number of white space code structure issues
 
 The stuctural standard of the words.py file does not currently conform to the Pep8 standard because there is a space missing after the comma that follows each word. As the file potentially contains over 1,000 words fixing this bug will be too difficult to fix and therefore will not. 
 
+# Deployment
+
+The game was deployed via an online terminal developed by Code institute known as Heroku, developed to facilitate deployment and host applications created using backend languages such Python. The deployment process is as follows:
+
+1. Create new Heroku app from Heroku dashboard 
+2. Name the app with a name that is available.
+3. Choose the region from which you are from (Europe)
+4. Select the create app button
+5. Select 'Settings' from the main menu
+6. Scroll to 'Config Vars' section and select 'Reveal Config Vars'
+7. In the 'Key' field input 'PORT' in the 'Value' field input '8000'
+8. Press 'Add' to add the value just entered
+9. Scroll down to 'Add buildpack' and select it
+10. Select 'Python' and save changes 
+11. Select 'Add buildpack' again and do the same with 'NodeJs'
+12. Link the App to your repository
+13. Select deploy  
+
 
 
