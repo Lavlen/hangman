@@ -50,15 +50,16 @@ Good Error Handling
 * The program will not process entry of a characters that are not letters and will instead prompt the user
 * Error-checking functionaly handles user's operational errors such as pressing the wrong keys
 
-### Features for the future
+## Features for the future
 
 * Introduce secret phrases and additional hangman stages 
 * Hints to assist with guessing words and phrases to make the game more interesting and interactive
 * Design a more developed graphics of the hangman stages to improve the games visual appeal
 
+# Design
 
+<img src="https://github.com/Lavlen/hangman/blob/main/design/flowchart.png" style="max-width:50%;">
 
-
-
+# Testing
 
 
