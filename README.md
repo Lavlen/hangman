@@ -1,31 +1,33 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman
+Hangman is a "guess the word" game where the player tries to guess a random word chosen by the program. The objective of the game is to guess the secret word within a limited number of attempts before a digital representation of the player is hung after a number of failed attempts or victory if the word is guessed before the allowed attempts are expired
 
-Welcome Lavlen,
+<img src="https://github.com/Lavlen/hangman/blob/main/responsiveness/hangman_responsive.PNG" style="max-width:50%;">
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+[View site here](https://hangm-n.herokuapp.com)
 
-## Reminders
+## How the game is played
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+* The program randomly chooses from a list a secret word for the player to guess.
 
-## Creating the Heroku app
+* The word is displayed to the player as dashes, with each dash representing a letter of the word.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+* Six attempts is given to the player to guess a secret word of varied length and difficulty
 
-1. `heroku/python`
-2. `heroku/nodejs`
+* For each correct letter guessed the placeholder dash will be replaced by the correct letter
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+* The game allows the player to guess the whole word in one attempt or a letter at a time.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+* For each incorrect guess, whether word or letter, the number of attempts remaining reduces by one each time and the  corresponding hangman graphic is displayed. 
 
-Connect your GitHub repository and deploy as normal.
+* The player wins when the secret word is guessed within six attempts. 
 
-## Constraints
+* The player loses if six attempts are made without guessing the secret word, in which event the final graphic of a whole man hanging from a gallow is displayed.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+* The player is prompted when a word or letter is guessed more tha once but does not lose any attempts.
 
------
-Happy coding!
+# Features
+
+
+
+
+
