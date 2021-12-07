@@ -69,10 +69,28 @@ Good Error Handling
 * As a player I need to be able to restart the game quickly and easily.
 * As a inexperience user with command line interfaces, instructions on how to navigate the app should be readily available to me.
 
-
 # Design
 
-Flow chart can be found [here](https://github.com/Lavlen/hangman/blob/main/design)
+A flowchart was used during the design phase to map the processes and decisions the application would need to handle. it can be found [here](https://github.com/Lavlen/hangman/blob/main/design)
+
+# Technologies
+##    Languages
+*   Python
+
+##  Programs and tools used
+* [Draw.io](https://app.diagrams.net/)
+Used to create the flowchart.
+
+* [Snipping tool](https://www.microsoft.com/en-us/p/screenshot-snipping-tool/9n9kcj2f020j#activetab=pivot:overviewtab)
+Used for screen snipping the code validation evidence from [Pep8](http://pep8online.com/), the test cases and proof of site responsiveness image.
+
+* [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web) for creating the test case file
+
+* [Github](https://github.com/) Remote hosting version control platform for recording changes made to code by storing it in a repository
+
+* [Gitpod](https://www.gitpod.io/docs/config-gitpod-file) Online IDE used for processing the code.
+
+* [Heroku](https://id.heroku.com/login) used for deployment and hosting the application.
 
 # Testing
 
@@ -128,7 +146,7 @@ Clear screen functionality does not appear to be functioning though the the meth
 
 The pep8 online checker identified a number of white space code structure issues and lines of code that were too long in the run.py. These were fixed within the editor window on the pep8online.com website at the same time.
 
-The stuctural standard of the words.py file does not currently conform to the Pep8 standard because there is a space missing after the comma that follows each word. As the file potentially contains over 1,000 words fixing this bug will be too difficult to fix and therefore will not. 
+The stuctural standard of the words.py file does not currently conform to the Pep8 standard because there is a space missing after the comma that follows each word. As the file potentially contains over 2,000 words fixing this bug will be too time consuming and as the function is not affected in anyway a decision was made not to amend the file. 
 
 # Deployment
 
@@ -147,6 +165,17 @@ The game was deployed via an online terminal developed by Code institute known a
 11. Select 'Add buildpack' again and do the same with 'NodeJs'
 12. Link the App to your repository
 13. Select deploy  
+
+# Credits
+
+## Code 
+[Kite](https://www.youtube.com/channel/UCxVRDu9ujwOrmDxu72V3ujQ)
+[Kylie Ying](https://youtu.be/cJJTnI22IF8)
+[wordlist source](https://www.randomlists.com/data/words.json)
+
+## Acknowledgement
+* My mentor for his guidance
+* The Slack community
 
 
 
