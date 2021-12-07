@@ -56,10 +56,59 @@ Good Error Handling
 * Hints to assist with guessing words and phrases to make the game more interesting and interactive
 * Design a more developed graphics of the hangman stages to improve the games visual appeal
 
+# User stories
+
+* As a regular player I want to be kept entertained with a large vocabulary of words to guess that are not repeated often.
+* As a computer novice I want to see clear instructions on how to play the game before I start.
+* As a player I want to be able to guess the word if I think I know it in a single attempt.
+* As a regular player of the classic game I do not want to lose attmpts when guessed the same word or letter repeatedly.
+* As a computer novice the game should be able to handle any keystroke error I make without needing further input from me.
+* AS a player of the classic game I expect the game to fill blank spaces with correct inputs to make it more entertaining and interactive.
+* As a player I would like to see a graphical representation of the hangman images as in most versions of the game.
+* As a player I would like to be able to track my progress and know how well I am playing the game. 
+* As a player I need to be able to restart the game quickly and easily.
+* As a inexperience user with command line interfaces, instructions on how to navigate the app should be readily available to me.
+
+
 # Design
 
 <img src="https://github.com/Lavlen/hangman/blob/main/design/flowchart.png" style="max-width:50%;">
 
 # Testing
+## Testing User Stories (UX) 
+
+As a regular player I want to be kept entertained with a large vocabulary of words to guess that are not repeated often.
+* The program chooses randomly from a list of over 500 words at the start of each game.
+
+As a computer novice I want to see clear instructions on how to play the game before I start.
+* When the game starts the user is given clear step by step instructions on how to play the game.
+
+As a player I want to be able to guess the word if I think I know it in a single attempt.
+* The program enables the user to guess the complete word in a single attempt.
+
+As a regular player of the classic game I do not want to lose attempts when guessed the same word or letter repeatedly.
+* The player does not lose lives for retrying words or letters.
+
+As a player I would like to see a list of the words and letters already tried so I don't keep repeating input.
+* The game tracks and displays a list of words and letters already tried to prevent the tediousness of the player constantly repeating tried inputs 
+
+As a computer novice the game should be able to handle any keystroke error I make without needing further input from me.
+* Error handling and input validation functionalities prompts the user when input errors are made whilst the game is in progress without interrupting the game.
+
+AS a player of the classic game I expect the game to fill blank spaces with correct inputs to make it more entertaining and interactive.
+* With each correct guess the placeholders are replaced by the correctly guessed letters.
+
+As a player I would like to see a graphical representation of the hangman images as in most versions of the game.
+* A new incomplete image of a hangman is displayed with every incorrect entry. A complete graphic of a man hanging from a gallow indicates the user has failed to guess the secret word within the number of allowed attempts. 
+
+As a player I would like to be able to track my progress and know how well I am playing the game. 
+* The game displays the 6 attempts players are given to guess the word. The number decrements by 1 with each incorrect new attempt and the user can be seen easily in the terminal while the game is in progress.
+
+As a player I need to be able to restart the game quickly and easily.
+* A player can restart the game quickly with a single keystroke which is displayed at the end of each game.
+
+As an inexperienced user of command line interfaces, instructions on how to navigate the app should be readily available to me.
+* Instructions on how the game is played is displayed upon entering the Heroku app website and clicking the run program button. At the end of the game the options available to the user are displayed within the terminal.
+
 
 
