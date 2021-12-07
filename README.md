@@ -170,7 +170,9 @@ The game was deployed via an online terminal developed by Code institute known a
 
 ## Code 
 [Kite](https://www.youtube.com/channel/UCxVRDu9ujwOrmDxu72V3ujQ)
+
 [Kylie Ying](https://youtu.be/cJJTnI22IF8)
+
 [wordlist source](https://www.randomlists.com/data/words.json)
 
 ## Acknowledgement
