@@ -72,22 +72,13 @@ Good Error Handling
 
 # Design
 
-<img src="https://github.com/Lavlen/hangman/blob/main/design/flowchart.png" style="max-width:50%;">
+Flow chart can be found [here](https://github.com/Lavlen/hangman/blob/main/design)
 
 # Testing
 
 The application was tested in both the Gitpod and Heroku terminals following test cases that can be found [here](https://github.com/Lavlen/hangman/tree/main/testing/test_cases.PNG)
 
 The website pep8online.com was used to check and correct the structure of the code to ensure it conformed to the best practice standard. [Validation result is here](https://github.com/Lavlen/hangman/tree/main/testing/pep8_validation.PNG)
-
-Testing was conducted within the GItpod terminal and Heroku terminal.
-
-## Further testing
-The game was executed within the Heroku application on the 5 most commonly used browsers for browser specific compatibility errors.The types were Google Chrome, Microsoft Edge, Internet Explorer, Safari and Firefox. Heroku rendered and executed the game correctly on all browsers.
-
-The application was viewed and played on the following devices a Windows' desktop PC, a ProBook-450-G4 laptop, IPhone7, Samsung Galaxy S7 tablet, S7 and S9 smart phones. The game played and executed as it should on the various device sizes and no bugs were identified.
-
-User testing was carried out by Friends and family members in an effort to locate bugs and or user experience issues.
 
 ## Testing User Stories (UX) 
 
@@ -124,6 +115,20 @@ As a player I need to be able to restart the game quickly and easily.
 As an inexperienced user of command line interfaces, instructions on how to navigate the app should be readily available to me.
 * Instructions on how the game is played is displayed upon entering the Heroku app website and clicking the run program button. At the end of the game the options available to the user are displayed within the terminal.
 
+## Further testing
+The game was executed within the Heroku application on the 5 most commonly used browsers for browser specific compatibility errors.The types were Google Chrome, Microsoft Edge, Internet Explorer, Safari and Firefox. Heroku rendered and executed the game correctly on all browsers.
+
+The application was viewed and played on the following devices a Windows' desktop PC, a ProBook-450-G4 laptop, IPhone7, Samsung Galaxy S7 tablet, S7 and S9 smart phones. The game played and executed as it should on the various device sizes and no bugs were identified.
+
+User testing was carried out by Friends and family members in an effort to locate bugs and or user experience issues.
+
 ### Bugs
+
+Clear screen functionality does not appear to be functioning though the the method used is according to Windows standard.
+
+The pep8 online checker identified a number of white space code structure issues and lines of code that were too long in the run.py. These were fixed within the editor window on the pep8online.com website at the same time.
+
+The stuctural standard of the words.py file does not currently conform to the Pep8 standard because there is a space missing after the comma that follows each word. As the file potentially contains over 1,000 words fixing this bug will be too difficult to fix and therefore will not. 
+
 
 
