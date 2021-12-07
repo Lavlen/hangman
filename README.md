@@ -27,6 +27,37 @@ Hangman is a "guess the word" game where the player tries to guess a random word
 
 # Features
 
+## Existing Features
+
+General features
+* Large list of words 
+* Random word selection for player
+* Varied word length and levels of word difficulty
+* Underscore placeholders for each letter of the word
+* Functionality that allows the user to guess the whole word in one attempt
+* The number of attempts remaining is decremented and displayed while the game is in progress
+* Hangman graphics is displayed with each incorrect entry
+
+User Friendliness
+* The program provides clear instructions on how to play the game.
+* Each correct word guessed is displayed in the place it belongs.
+* A list of letters already tried is displayed to avoid making the game tedious
+* The program interacts with the user to guide the playing experience during and at the end of each game
+* The game allows quick restart or game exit with option selection keys feature
+
+Good Error Handling
+* The program is not affected by keys not bound to a function
+* The program will not process entry of a characters that are not letters and will instead prompt the user
+* Error-checking functionaly handles user's operational errors such as pressing the wrong keys
+
+### Features for the future
+
+* Introduce secret phrases and additional hangman stages 
+* Hints to assist with guessing words and phrases to make the game more interesting and interactive
+* Design a more developed graphics of the hangman stages to improve the games visual appeal
+
+
+
 
 
 
