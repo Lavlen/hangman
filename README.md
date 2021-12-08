@@ -4,7 +4,7 @@
 Hangman is a "guess the word" game where the player tries to guess a random word chosen by the program. The objective of the game is to guess the secret word within a limited number of attempts before a digital representation of the player is hung after a number of failed attempts or victory if the word is guessed before the allowed attempts are expired. The primary purpose of the game is for entertaininment and developed for novices to expert system users who enjoy playing word games. 
 
 
-<img src="https://github.com/Lavlen/hangman/blob/main/responsiveness/hangman_responsive.PNG" style="max-width:50%;">
+<img src="https://github.com/Lavlen/hangman/blob/main/responsiveness/responsiveness_of_game.PNG" style="max-width:50%;">
 
 [View site here](https://hangm-n.herokuapp.com)
 
@@ -48,16 +48,16 @@ A flowchart was used during the design phase to map the processes and decisions 
 # Features
 
 ## Existing Features
-<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/instructions.PNG" style=width="150" height="100"></p>
+<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/instructions.PNG" style=width="300" height="250"></p>
 
 * Instructions displayed at start of game.
 * Large list of words 
 * Random word selection for player
-<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/hangman2.PNG" style=width="150" height="100"></p>
+<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/hangman2.PNG" style=width="300" height="250"></p>
 
 * Receives input from player
 * Varied word length and levels of word difficulty
-<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/hangman3.PNG" style=width="150" height="100"></p>
+<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/hangman3.PNG" style=width="300" height="250"></p>
 
 * Underscore placeholders for each letter of the word
 * Functionality that allows the user to guess the whole word in one attempt
@@ -89,6 +89,8 @@ Good Error Handling
 ##  Programs and tools used
 * [Draw.io](https://app.diagrams.net/)
 Used to create the flowchart.
+
+* [Am I responsive](http://ami.responsivedesign.is/) Website for testing responsiveness of web applications.
 
 * [Snipping tool](https://www.microsoft.com/en-us/p/screenshot-snipping-tool/9n9kcj2f020j#activetab=pivot:overviewtab)
 Used for screen snipping the code validation evidence from [Pep8](http://pep8online.com/), the test cases and proof of site responsiveness image.
