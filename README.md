@@ -1,7 +1,7 @@
 # User Experience UX
 
 ### Hangman
-Hangman is a "guess the word" game where the player tries to guess a random word chosen by the program. The objective of the game is to guess the secret word within a limited number of attempts before a digital representation of the player is hung after a number of failed attempts or victory if the word is guessed before the allowed attempts are expired. The primary purpose of the game is for entertaininment and developed for novices to expert system users are enjoy playing word games. 
+Hangman is a "guess the word" game where the player tries to guess a random word chosen by the program. The objective of the game is to guess the secret word within a limited number of attempts before a digital representation of the player is hung after a number of failed attempts or victory if the word is guessed before the allowed attempts are expired. The primary purpose of the game is for entertaininment and developed for novices to expert system users who enjoy playing word games. 
 
 
 <img src="https://github.com/Lavlen/hangman/blob/main/responsiveness/hangman_responsive.PNG" style="max-width:50%;">
