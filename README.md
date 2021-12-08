@@ -87,7 +87,7 @@ Used to create the flowchart.
 * [Snipping tool](https://www.microsoft.com/en-us/p/screenshot-snipping-tool/9n9kcj2f020j#activetab=pivot:overviewtab)
 Used for screen snipping the code validation evidence from [Pep8](http://pep8online.com/), the test cases and proof of site responsiveness image.
 
-* [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web) for creating the test case file
+* [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web) for creating the test case file and resolved Pep8 failure with words.py file discussed in bugs section of the testing phase in this documentation.
 
 * [Github](https://github.com/) Remote hosting version control platform for recording changes made to code by storing it in a repository
 
@@ -147,9 +147,13 @@ User testing was carried out by Friends and family members in an effort to locat
 
 Clear screen functionality does not appear to be functioning though the the method used is according to Windows standard.
 
+Using 'clear' instead of 'cls' in the clear method resolved this issue.
+
 The pep8 online checker identified a number of white space code structure issues and lines of code that were too long in the run.py. These were fixed within the editor window on the pep8online.com website at the same time.
 
 The stuctural standard of the words.py file does not currently conform to the Pep8 standard because there is a space missing after the comma that follows each word. As the file potentially contains over 2,000 words fixing this bug will be too time consuming and as the function is not affected in anyway a decision was made not to amend the file. 
+
+A solution was found which involved copying the entire word list and formatting it in Excel before pasting it back into the Gitpod terminal therefore this bug has been fixed.
 
 # Deployment
 
