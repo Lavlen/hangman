@@ -101,7 +101,7 @@ The application was tested in both the Gitpod and Heroku terminals following tes
 
 The website pep8online.com was used to check and correct the structure of the code to ensure it conformed to the best practice standard. The validation results of all three files that comprises the program are listed below:
 * [hangman_parts.py](https://github.com/Lavlen/hangman/tree/main/testing/hangman_partspy.PNG)
-* [words.py](https://github.com/Lavlen/hangman/tree/main/testing/validatwordspy.PNG)
+* [words.py](https://github.com/Lavlen/hangman/tree/main/testing/validatewordspy.PNG)
 * [run.py](https://github.com/Lavlen/hangman/tree/main/testing/validaterunpy.PNG)
 
 ## Testing User Stories (UX) 
