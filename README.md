@@ -42,7 +42,7 @@ Hangman is a "guess the word" game where the player tries to guess a random word
 # Data Model
 A flowchart was used during the design phase to map the processes and decisions the application would need to handle.
 
-https://github.com/Lavlen/hangman/blob/main/design/flowchart.png
+<img src="https://github.com/Lavlen/hangman/blob/main/design/flowchart.png" style="max-width:50%;">
 
 # Features
 
