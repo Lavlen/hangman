@@ -1,9 +1,23 @@
-# Hangman
+# User Experience UX
+
+### Hangman
 Hangman is a "guess the word" game where the player tries to guess a random word chosen by the program. The objective of the game is to guess the secret word within a limited number of attempts before a digital representation of the player is hung after a number of failed attempts or victory if the word is guessed before the allowed attempts are expired
 
 <img src="https://github.com/Lavlen/hangman/blob/main/responsiveness/hangman_responsive.PNG" style="max-width:50%;">
 
 [View site here](https://hangm-n.herokuapp.com)
+
+# User stories
+* As a regular player I want to be kept entertained with a large vocabulary of words to guess that are not repeated often.
+* As a computer novice I want to see clear instructions on how to play the game before I start.
+* As a player I want to be able to guess the word if I think I know it in a single attempt.
+* As a regular player of the classic game I do not want to lose attmpts when guessed the same word or letter repeatedly.
+* As a computer novice the game should be able to handle any keystroke error I make without needing further input from me.
+* AS a player of the classic game I expect the game to fill blank spaces with correct inputs to make it more entertaining and interactive.
+* As a player I would like to see a graphical representation of the hangman images as in most versions of the game.
+* As a player I would like to be able to track my progress and know how well I am playing the game. 
+* As a player I need to be able to restart the game quickly and easily.
+* As a inexperience user with command line interfaces, instructions on how to navigate the app should be readily available to me.
 
 ## How the game is played
 
@@ -24,6 +38,11 @@ Hangman is a "guess the word" game where the player tries to guess a random word
 * The player loses if six attempts are made without guessing the secret word, in which event the final graphic of a whole man hanging from a gallow is displayed.
 
 * The player is prompted when a word or letter is guessed more tha once but does not lose any attempts.
+
+# Data Model
+A flowchart was used during the design phase to map the processes and decisions the application would need to handle.
+
+https://github.com/Lavlen/hangman/blob/main/design/flowchart.png
 
 # Features
 
@@ -55,19 +74,6 @@ Good Error Handling
 * Introduce secret phrases and additional hangman stages 
 * Hints to assist with guessing words and phrases to make the game more interesting and interactive
 * Design a more developed graphics of the hangman stages to improve the games visual appeal
-
-# User stories
-
-* As a regular player I want to be kept entertained with a large vocabulary of words to guess that are not repeated often.
-* As a computer novice I want to see clear instructions on how to play the game before I start.
-* As a player I want to be able to guess the word if I think I know it in a single attempt.
-* As a regular player of the classic game I do not want to lose attmpts when guessed the same word or letter repeatedly.
-* As a computer novice the game should be able to handle any keystroke error I make without needing further input from me.
-* AS a player of the classic game I expect the game to fill blank spaces with correct inputs to make it more entertaining and interactive.
-* As a player I would like to see a graphical representation of the hangman images as in most versions of the game.
-* As a player I would like to be able to track my progress and know how well I am playing the game. 
-* As a player I need to be able to restart the game quickly and easily.
-* As a inexperience user with command line interfaces, instructions on how to navigate the app should be readily available to me.
 
 # Design
 
@@ -166,14 +172,23 @@ The game was deployed via an online terminal developed by Code institute known a
 12. Link the App to your repository
 13. Select deploy  
 
+## How to Clone the project
+
+1. Go to https://github.com/
+2. Log into account
+3. Click on the repository to be cloned
+4. Click the drop-down list arrow on the "Code" tab
+5. Click on the copy link icon next to the url of the repository
+6. Create a new repository and launch Gitpod to create a workspace from it
+7. In the gitpod terminal type: "git clone"
+8. paste the copied link and press enter
+
 # Credits
 
 ## Code 
-[Kite](https://www.youtube.com/channel/UCxVRDu9ujwOrmDxu72V3ujQ)
-
-[Kylie Ying](https://youtu.be/cJJTnI22IF8)
-
-[wordlist source](https://www.randomlists.com/data/words.json)
+* [Kite](https://www.youtube.com/channel/UCxVRDu9ujwOrmDxu72V3ujQ)
+* [Kylie Ying](https://youtu.be/cJJTnI22IF8)
+* [wordlist source](https://www.randomlists.com/data/words.json)
 
 ## Acknowledgement
 * My mentor for his guidance
