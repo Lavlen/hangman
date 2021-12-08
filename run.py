@@ -22,18 +22,24 @@ def delay():
         print('.', end='')
         sleep(4.0)
     print()
- 
+
 
 #  Print a diagram of hangman
+print()
+print()
 print('  #====================H A N G M A N=======================#')
-print('  # 1. Enter a letter or whole word                        #')
-print('  # 2. You are allowed 6 attempts                          #')
-print('  # 3. You will not lose attempts for repeating tries      #')
-print('  # 4. Select "X" or "R" to exit or restart the game       #')
+print('  #                                                        #')
+print('  #  1. Enter a letter or whole word                       #')
+print('  #  2. Press "Enter" after typing your word or letter     #')
+print('  #  3. You are allowed 6 attempts                         #')
+print('  #  4. You will not lose attempts for repeating tries     #')
+print('  #  5. Select "X" or "R" to exit or restart the game      #')
+print('  #                                                        #')
 print('  #========================================================#')
 
-
+# call time delay function
 delay()
+
 
 def get_word():
     """
@@ -42,6 +48,7 @@ def get_word():
     """
     word = random.choice(word_list)
     return word.upper()
+
 
 def start_playing(word):
     """
