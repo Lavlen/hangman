@@ -48,11 +48,14 @@ A flowchart was used during the design phase to map the processes and decisions 
 # Features
 
 ## Existing Features
-
-General features
+<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/instructions.PNG" style=width="150" height="100"></p>
+* Instructions displayed at start of game.
 * Large list of words 
 * Random word selection for player
+<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/hangman2.PNG" style=width="150" height="100"></p>
+* Receives input from player
 * Varied word length and levels of word difficulty
+<p align="left"><img src="https://github.com/Lavlen/hangman/blob/main/features/hangman3.PNG" style=width="150" height="100"></p>
 * Underscore placeholders for each letter of the word
 * Functionality that allows the user to guess the whole word in one attempt
 * The number of attempts remaining is decremented and displayed while the game is in progress
