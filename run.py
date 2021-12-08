@@ -27,15 +27,15 @@ def delay():
 #  Print a diagram of hangman
 print()
 print()
-print('  #====================H A N G M A N=======================#')
-print('  #                                                        #')
-print('  #  1. Enter a letter or whole word                       #')
-print('  #  2. Press "Enter" after typing your word or letter     #')
-print('  #  3. You are allowed 6 attempts                         #')
-print('  #  4. You will not lose attempts for repeating tries     #')
-print('  #  5. Select "X" or "R" to exit or restart the game      #')
-print('  #                                                        #')
-print('  #========================================================#')
+print('  #==================== H A N G M A N =======================#')
+print('  #                                                          #')
+print('  #  1. Enter a letter or whole word                         #')
+print('  #  2. Press "Enter" after typing your word or letter       #')
+print('  #  3. You are allowed 6 attempts                           #')
+print('  #  4. You will not lose attempts for repeating tries       #')
+print('  #  5. Select "X" or "R" to exit or restart the game        #')
+print('  #                                                          #')
+print('  #==========================================================#')
 
 """
 call time delay function
