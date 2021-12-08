@@ -99,7 +99,7 @@ Used for screen snipping the code validation evidence from [Pep8](http://pep8onl
 
 The application was tested in both the Gitpod and Heroku terminals following test cases that can be found [here](https://github.com/Lavlen/hangman/tree/main/testing/test_cases.PNG)
 
-The website pep8online.com was used to check and correct the structure of the code to ensure it conformed to the best practice standard. [Validation result is here](https://github.com/Lavlen/hangman/tree/main/testing/pep8_validation.PNG)
+The website pep8online.com was used to check and correct the structure of the code to ensure it conformed to the best practice standard. The validation results of all three files that comprises the program are [here](https://github.com/Lavlen/hangman/tree/main/testing/)
 
 ## Testing User Stories (UX) 
 
