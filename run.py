@@ -8,17 +8,7 @@ import sys
 
 # clear screen
 def screen_clear():
-    lambda: os.system('cls')
-
-
-#  Print a diagram of hangman
-print('   ===================== HANGMAN ===============')
-print('   1. Enter a letter or whole word')
-print('   2. You are allowed 6 attempts')
-print('   3. Letters already tried will not count against player')
-print('   4. Select "X" or "R" to exit or restart the game')
-print('   =============================================')
-print('    Thinking of a word\n')
+    os.system('clear')
 
 
 # Time delay function
@@ -28,12 +18,22 @@ def delay():
     delay game start by 5 seconds
     """
     print('', end='    ')
-    for i in range(5):
+    for i in range(3):
         print('.', end='')
-        sleep(.5)
+        sleep(4.0)
     print()
-delay()
+ 
 
+#  Print a diagram of hangman
+print('  #====================H A N G M A N=======================#')
+print('  # 1. Enter a letter or whole word                        #')
+print('  # 2. You are allowed 6 attempts                          #')
+print('  # 3. You will not lose attempts for repeating tries      #')
+print('  # 4. Select "X" or "R" to exit or restart the game       #')
+print('  #========================================================#')
+
+
+delay()
 
 def get_word():
     """
@@ -43,13 +43,15 @@ def get_word():
     word = random.choice(word_list)
     return word.upper()
 
-
 def start_playing(word):
     """
     run game,display random word as string of underscore
     create variables for storing lists of
     guessed letters, words and number of valid guesses
     """
+    screen_clear()
+    print('    =========================================')
+    print('    I am thinking of a word...')
     secret_word = "-" * len(word)
     print("    The word has", len(secret_word), "letters")
     guessed = False
@@ -76,7 +78,7 @@ def start_playing(word):
             if user_input in guessed_letters:
                 print('   Letter already tried', user_input)
             elif user_input not in word:
-                print('   ', user_input, 'is not in the word')
+                print('      ', user_input, 'is not in the word')
                 """
                 decrement from remaining attempts
                 add guessed letters to guessed_letters list
@@ -179,5 +181,4 @@ if __name__ == "__main__":
 
         if selected == "Restart game":
             screen_clear()
-            delay()
             hangman()
