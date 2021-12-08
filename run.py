@@ -37,7 +37,11 @@ print('  #  5. Select "X" or "R" to exit or restart the game      #')
 print('  #                                                        #')
 print('  #========================================================#')
 
-# call time delay function
+"""
+call time delay function
+causes instructions to stay on screen
+for a while
+"""
 delay()
 
 
